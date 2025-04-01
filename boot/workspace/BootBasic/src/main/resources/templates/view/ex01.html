@@ -12,16 +12,19 @@
     <!-- 위에가 복잡해서 아래처럼 대괄호 2개 안에 넣어도 된다.-->
     <h3>[[${'Hello world'}]]</h3>
 
+    <h3>텍스트 출력 th:text=""</h3>
     <h3 th:text="${1==1}"></h3>
     <h3>[[${1 == 1}]]</h3>
 
     <h3 th:text="${'a' eq 'b'}"></h3>
     <h3>[[${'a' eq 'b'}]]</h3>
 
+    <h3>변수 선언  th:with</h3>
     <div th:with="a=10"> <!--변수 선언-->
         [[${a}]]
     </div>
 
+    <h3>th:if, th:unless</h3>
     <div th:with="a=30">
         <span th:if="${a} == 20">20입니다.</span>
         <span th:unless="${a} == 20">20이 아닙니다.</span>

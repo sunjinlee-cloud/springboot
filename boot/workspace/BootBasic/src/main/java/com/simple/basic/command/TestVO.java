@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 //@Setter
 //@ToString //toString override
 @Data // 게터, 세터, 투스트링 합침
+@Builder
 public class TestVO {
     
     //단축키 alt+insert 

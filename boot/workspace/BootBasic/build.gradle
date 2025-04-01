@@ -35,6 +35,7 @@ dependencies {
 	//implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.83' //jsp를 화면으로 쓰기 위한 tomcat embeded
 	//implementation 'javax.servlet:jstl:1.2'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 tasks.named('test') {
