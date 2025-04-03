@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.simple.basic.memo.mapper.MemoMapper">
+
+    <!-- mysql에서 시간가져오는거 그냥 select now() 임 -->
+    <select id="getTime" resultType="string">
+        select now()
+    </select>
+
+    <insert id="memoWrite" parameterType="MemoVO">
+        INSERT INTO MEMO (MEMO, PHONE, PW, SECRET) VALUES(#{memo}, #{phone}, #{pw}, #{secret})
+    </insert>
+
+    <select id="getList" resultType="MemoVO">
+        select * from memo
+    </select>
+</mapper>

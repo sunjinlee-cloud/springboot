@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>이 화면에 진입시 simpleVO 클래스를 화면에 출력</h3>
+    <pre>
+      int 회원번호
+      String 이름
+      LocalDateTime 가입일
+
+      아래에서 회원정보확인 링크를 만들고
+      quiz01_result?키=값 형태로 회원번호와 이름 넘겨주기
+
+      resultpage에는 회원정보와 이름을 출력하기
+    </pre>
+    [[${vo}]] <br>
+    <a th:href="@{/view/quiz01_result(no=${vo.no}, name=${vo.name})}">회원정보 확인</a>
+    <br>
+<!--    <a th:href="@{/view/quiz01_result/{a}/{b}(a=${vo.no}, b=${vo.name})}">회원정보 확인2</a>-->
+
+</body>
+</html>

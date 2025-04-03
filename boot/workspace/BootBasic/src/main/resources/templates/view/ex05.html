@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>타임리프의 include</h3>
+
+    <th:block th:replace="~{/include/layout01 :: part1}">
+    </th:block>
+
+    <hr>
+    <h3>전체 레이아웃 가져오기</h3>
+
+    <th:block th:replace="~{/include/layout02}">
+
+    </th:block>
+
+
+</body>
+</html>
