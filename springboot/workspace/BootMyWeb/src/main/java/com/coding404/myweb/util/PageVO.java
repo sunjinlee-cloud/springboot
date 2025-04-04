@@ -21,7 +21,7 @@ public class PageVO {
     private List<Integer> pageList = new ArrayList<>();
     //화면에서 start 부터 end까지 계산된 결과를 담아놓기 위한 번호리스트(타임리프의 향상된 for문)
 
-    private int pageCount = 10;//화면에 그려지는 페이지네이션 개수
+    private int pageCount = 5;//화면에 그려지는 페이지네이션 개수
 
     //생성시 criteria 객체와 총 게시글 수가 꼭 필요하다.
     public PageVO(Criteria cri, int total) {

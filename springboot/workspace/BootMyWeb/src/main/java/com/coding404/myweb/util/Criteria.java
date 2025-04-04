@@ -9,6 +9,13 @@ public class Criteria {
     private int page;
     private int amount;
 
+    //검색 키워드를 저장할 필드
+    private String searchName;
+    private String searchContent;
+    private String searchPrice;
+    private String startDate;
+    private String endDate;
+
     public Criteria() {
         this(1,10) ;
     }
